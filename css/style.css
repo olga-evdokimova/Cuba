@@ -48,7 +48,7 @@ body {
   margin: 0 auto;
 }
 
-.header {
+.header__inner {
   height: 100vh;
   background-image: url("../image/header/header-bg.jpg");
   background-repeat: no-repeat;
@@ -57,25 +57,54 @@ body {
   padding: 40px;
 }
 
-.header__inner {
-  border: 2px solid #ECB84C;
+.header__content {
+  border: 2px solid #ecb84c;
   border-bottom: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  color: #ffffff;
 }
 
 .header__title {
   font-family: "Georgia-Bold";
   font-size: 200px;
   line-height: 227px;
-  margin: auto;
-  color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: auto;
 }
 
 .header__slogan {
   font-family: "Georgia-Regular";
   font-size: 24px;
   line-height: 27px;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -12px;
+}
+
+.header__slogan::before {
+  content: "";
+  width: 100%;
+  border-top: 2px solid #ecb84c;
+  margin-right: 30px;
+}
+
+.header__slogan::after {
+  content: "";
+  width: 100%;
+  border-top: 2px solid #ecb84c;
+  margin-left: 30px;
 }

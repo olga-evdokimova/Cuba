@@ -69,34 +69,51 @@ body {
     margin: 0 auto;
 }
 .header {
-   // width: 1440px;
-    height: 100vh;
-    background-image: url("../image/header/header-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
     &__inner {
-        border: 2px solid #ECB84C;
-        border-bottom: none;
-        display: flex;
-
+        // width: 1440px;
+        height: 100vh;
+        background-image: url("../image/header/header-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
     }
     &__content {
-       
-        
+        border: 2px solid #ecb84c;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: #ffffff;
     }
     &__title {
         font-family: "Georgia-Bold";
         font-size: 200px;
         line-height: 227px;
-        margin: auto;
-        color: #FFFFFF;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        margin: auto;
     }
     &__slogan {
         font-family: "Georgia-Regular";
         font-size: 24px;
         line-height: 27px;
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        margin-bottom: -12px;
+        &::before {
+            content: "";
+            width: 100%;
+            border-top: 2px solid #ecb84c;
+            margin-right: 30px;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            border-top: 2px solid #ecb84c;
+            margin-left: 30px;
+        }
     }
 }
