@@ -1,9 +1,8 @@
 body {
-  font-family: "Lato-Regular";
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
-  line-height: 28;
+  line-height: 28px;
   color: #505050;
-  height: 100%;
 }
 
 @font-face {
@@ -20,26 +19,6 @@ body {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-Bold";
-  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-Regular";
-  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-.wrapper {
-  min-height: 100%;
 }
 
 .container {
@@ -107,4 +86,29 @@ body {
   width: 100%;
   border-top: 2px solid #ecb84c;
   margin-left: 30px;
+}
+
+.menu__list {
+  padding-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f1d3d3;
+}
+
+.menu__list-link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0 20px 20px 20px;
+  color: #909090;
+}
+
+.menu__list-link:hover {
+  padding-bottom: 16px;
+  border-bottom: 4px solid #ECB84C;
+  color: #4E5665;
 }
