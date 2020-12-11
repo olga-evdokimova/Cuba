@@ -106,6 +106,7 @@ body {
 }
 //======menu========
 .menu {
+    height: 63px;
     &__list {
         padding-top: 24px;
         display: flex;
@@ -120,7 +121,6 @@ body {
         line-height: 1.4;
         padding: 0 20px 20px 20px;
         color: #909090;
-
         &:hover {
             padding-bottom: 16px;
             border-bottom: 4px solid #ecb84c;

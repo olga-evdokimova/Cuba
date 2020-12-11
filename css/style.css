@@ -89,6 +89,10 @@ body {
   margin-left: 30px;
 }
 
+.menu {
+  height: 63px;
+}
+
 .menu__list {
   padding-top: 24px;
   display: -webkit-box;
