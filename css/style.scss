@@ -218,8 +218,8 @@ body {
     &__row-inner {
         width: 470px;
         height: 289px;
-        outline: 19px solid #ffffff;
-        background-color: #ffffff;
+        padding: 19px;
+        background-color: #fff;
         position: relative;
     }
     &__row-01 {
@@ -227,17 +227,21 @@ body {
             content: "";
             width: 33px;
             height: 33px;
-            background-image: url("../image/content/corner-01.png");
+            border-top: 2px solid #ECB84C;
+            border-left: 2px solid #ECB84C ;
             position: absolute;
+            top: 19px;
+            left: 19px;
         }
         &::after {
             content: "";
             width: 33px;
             height: 33px;
-            background-image: url("../image/content/corner-02.png");
+            border-bottom: 2px solid #ECB84C;
+            border-right: 2px solid #ECB84C ;
             position: absolute;
-            bottom: 0;
-            right: 0;
+            bottom: 19px;
+            right: 19px;
         }
     }
     &__row-02 {
@@ -245,18 +249,21 @@ body {
             content: "";
             width: 33px;
             height: 33px;
-            background-image: url("../image/content/corner-03.png");
+            border-top: 2px solid #ECB84C;
+            border-right: 2px solid #ECB84C ;
             position: absolute;
-            right: 0;
+            right: 19px;
+            top: 19px;
         }
         &::after {
             content: "";
             width: 33px;
             height: 33px;
-            background-image: url("../image/content/corner-04.png");
+            border-bottom: 2px solid #ECB84C;
+            border-left: 2px solid #ECB84C ;
             position: absolute;
-            bottom: 0;
-            left: 0;
+            bottom: 19px;
+            left: 19px;
         }
     }
     &__title {
@@ -264,11 +271,11 @@ body {
         font-size: 24px;
         line-height: 25px;
         color: #4e5665;
-        padding: 20px;
+        padding:14px 20px;
     }
 
     &__text {
-        padding: 0 21px;
+        padding: 0 21px ;
     }
 
     &__row-reverse {
@@ -278,5 +285,33 @@ body {
         background-position: left;
         display: flex;
         justify-content: flex-end;
+    }
+}
+//=======car===========
+.car {
+    &__inner {
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 111px;
+    }
+    &__images{
+       
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    
+    }
+  
+    &__shadow {
+        display: block;
+        min-height: 7px;
+        background-image: url("../image/content/shadow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 53px;
+    }
+    &__text {
     }
 }
