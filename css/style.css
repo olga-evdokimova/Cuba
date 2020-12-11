@@ -1,5 +1,6 @@
+@charset "UTF-8";
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 28px;
   color: #505050;
@@ -109,6 +110,74 @@ body {
 
 .menu__list-link:hover {
   padding-bottom: 16px;
-  border-bottom: 4px solid #ECB84C;
-  color: #4E5665;
+  border-bottom: 4px solid #ecb84c;
+  color: #4e5665;
+}
+
+.info__inner {
+  margin: 83px 0 80px 0;
+}
+
+.info__title {
+  margin-bottom: 22px;
+}
+
+.info__link {
+  display: block;
+  font-weight: 700;
+  color: #ecb84c;
+  text-align: end;
+  margin-bottom: 35px;
+}
+
+.info__link::after {
+  content: "››";
+  padding-left: 5px;
+}
+
+.info__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.info__stats {
+  height: 160px;
+  text-align: center;
+}
+
+.info__stats-img {
+  width: 94px;
+  height: 80px;
+}
+
+.info__stats-number {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #4e5665;
+  padding-top: 32px;
+}
+
+.info__stats-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #909090;
+}
+
+.title {
+  text-align: center;
+  font-family: "Georgia-Regular";
+  font-size: 32px;
+  line-height: 38px;
+  color: #4e5665;
+}
+
+.line {
+  max-width: 1170px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d0d4d896;
 }

@@ -1,9 +1,8 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 16px;
     line-height: 28px;
     color: #505050;
-    
 }
 @font-face {
     font-family: "Georgia-Bold";
@@ -55,6 +54,7 @@ body {
     padding: 0 10px;
     margin: 0 auto;
 }
+//=====header=======
 .header {
     &__inner {
         // width: 1440px;
@@ -104,31 +104,90 @@ body {
         }
     }
 }
+//======menu========
 .menu {
     &__list {
-       padding-top: 24px;
+        padding-top: 24px;
         display: flex;
         justify-content: center;
         color: #f1d3d3;
-        
-      
     }
     &__list-item {
-       
-        
     }
     &__list-link {
         font-weight: bold;
         font-size: 14px;
         line-height: 1.4;
-       padding: 0 20px 20px 20px;
-       color: #909090;
+        padding: 0 20px 20px 20px;
+        color: #909090;
 
-        &:hover{
+        &:hover {
             padding-bottom: 16px;
-            border-bottom: 4px solid #ECB84C;
-            color:  #4E5665;
-            ;
+            border-bottom: 4px solid #ecb84c;
+            color: #4e5665;
         }
     }
+}
+//======info========
+.info {
+    
+    
+    &__inner {
+        margin: 83px 0 80px 0;
+    }
+    &__title {
+        margin-bottom: 22px;
+    }
+    &__text {
+    }
+    &__link {
+        display: block;
+        font-weight: 700;
+        color: #ecb84c;
+        text-align: end;
+        margin-bottom: 35px;
+        &::after {
+            content: "››";
+            padding-left: 5px;
+        }
+    }
+    &__body {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__stats {
+        height: 160px;
+        text-align: center;
+    }
+    &__stats-img {
+        width: 94px;
+        height: 80px;
+    }
+    &__stats-number {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        color: #4e5665;
+        padding-top: 32px;
+    }
+    &__stats-text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #909090;
+    }
+}
+.title {
+    text-align: center;
+    font-family: "Georgia-Regular";
+    font-size: 32px;
+    line-height: 38px;
+    color: #4e5665;
+}
+.text {
+}
+.line{
+    max-width: 1170px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d0d4d896;
 }
