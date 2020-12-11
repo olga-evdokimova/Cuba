@@ -130,8 +130,6 @@ body {
 }
 //======info========
 .info {
-    
-    
     &__inner {
         margin: 83px 0 80px 0;
     }
@@ -177,6 +175,7 @@ body {
         color: #909090;
     }
 }
+//=====повторяющиеся блоки с текстом
 .title {
     text-align: center;
     font-family: "Georgia-Regular";
@@ -186,8 +185,98 @@ body {
 }
 .text {
 }
-.line{
+//повторяющийся блок с линией
+.line {
     max-width: 1170px;
     margin: 0 auto;
     border-bottom: 1px solid #d0d4d896;
+}
+//=========about=======
+.about {
+    &__inner {
+        padding: 80px 0 121px;
+    }
+    &__title {
+        margin-bottom: 13px;
+    }
+    &__text {
+        margin-bottom: 72px;
+    }
+    &__body {
+    }
+}
+.about-card {
+    &__row {
+        min-height: 428px;
+        background-image: url("../image/content/about-01.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-bottom: 101px;
+        display: flex;
+        align-items: center;
+    }
+    &__row-inner {
+        width: 470px;
+        height: 289px;
+        outline: 19px solid #ffffff;
+        background-color: #ffffff;
+        position: relative;
+    }
+    &__row-01 {
+        &::before {
+            content: "";
+            width: 33px;
+            height: 33px;
+            background-image: url("../image/content/corner-01.png");
+            position: absolute;
+        }
+        &::after {
+            content: "";
+            width: 33px;
+            height: 33px;
+            background-image: url("../image/content/corner-02.png");
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &__row-02 {
+        &::before {
+            content: "";
+            width: 33px;
+            height: 33px;
+            background-image: url("../image/content/corner-03.png");
+            position: absolute;
+            right: 0;
+        }
+        &::after {
+            content: "";
+            width: 33px;
+            height: 33px;
+            background-image: url("../image/content/corner-04.png");
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__title {
+        font-family: "Georgia-Regular";
+        font-size: 24px;
+        line-height: 25px;
+        color: #4e5665;
+        padding: 20px;
+    }
+
+    &__text {
+        padding: 0 21px;
+    }
+
+    &__row-reverse {
+        min-height: 428px;
+        background-image: url("../image/content/about-02.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        display: flex;
+        justify-content: flex-end;
+    }
 }

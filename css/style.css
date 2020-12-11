@@ -181,3 +181,99 @@ body {
   margin: 0 auto;
   border-bottom: 1px solid #d0d4d896;
 }
+
+.about__inner {
+  padding: 80px 0 121px;
+}
+
+.about__title {
+  margin-bottom: 13px;
+}
+
+.about__text {
+  margin-bottom: 72px;
+}
+
+.about-card__row {
+  min-height: 428px;
+  background-image: url("../image/content/about-01.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 101px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-card__row-inner {
+  width: 470px;
+  height: 289px;
+  outline: 19px solid #ffffff;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.about-card__row-01::before {
+  content: "";
+  width: 33px;
+  height: 33px;
+  background-image: url("../image/content/corner-01.png");
+  position: absolute;
+}
+
+.about-card__row-01::after {
+  content: "";
+  width: 33px;
+  height: 33px;
+  background-image: url("../image/content/corner-02.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.about-card__row-02::before {
+  content: "";
+  width: 33px;
+  height: 33px;
+  background-image: url("../image/content/corner-03.png");
+  position: absolute;
+  right: 0;
+}
+
+.about-card__row-02::after {
+  content: "";
+  width: 33px;
+  height: 33px;
+  background-image: url("../image/content/corner-04.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about-card__title {
+  font-family: "Georgia-Regular";
+  font-size: 24px;
+  line-height: 25px;
+  color: #4e5665;
+  padding: 20px;
+}
+
+.about-card__text {
+  padding: 0 21px;
+}
+
+.about-card__row-reverse {
+  min-height: 428px;
+  background-image: url("../image/content/about-02.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
