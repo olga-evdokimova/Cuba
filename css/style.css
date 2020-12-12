@@ -279,12 +279,9 @@ body {
   padding: 0 21px;
 }
 
-.car__inner {
+.car__images {
+  margin: 111px 0 53px;
   position: relative;
-}
-
-.car__title {
-  margin-bottom: 111px;
 }
 
 .car__img {
@@ -292,11 +289,88 @@ body {
   margin: 0 auto;
 }
 
-.car__shadow {
+.car__dots {
+  width: 884px;
+  height: 381px;
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.car__dot {
+  width: 32px;
+  height: 32px;
+  background: #ecb74ca4;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.car__dot:hover::after {
   display: block;
-  min-height: 7px;
-  background-image: url("../image/content/shadow.png");
+}
+
+.car__dot:hover .car__dot-text {
+  display: block;
+}
+
+.car__dot::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #ffd600;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 11px;
+}
+
+.car__dot::after {
+  content: "";
+  display: none;
+  background-image: url("../image/content/car-line.png");
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 53px;
+  background-size: initial;
+  width: 244px;
+  height: 158px;
+  margin-top: -170px;
+  margin-left: 22px;
+}
+
+.car__dot-01 {
+  left: 0;
+  top: 190px;
+}
+
+.car__dot-02 {
+  left: 347px;
+  top: 188px;
+}
+
+.car__dot-03 {
+  left: 618px;
+  top: 147px;
+}
+
+.car__dot-04 {
+  left: 691px;
+  top: 349px;
+}
+
+.car__dot-text {
+  display: none;
+  font-size: 14px;
+  white-space: nowrap;
+  position: absolute;
+  top: -147px;
+  left: 145px;
+  background-color: rgba(255, 255, 255, 0.767);
+  padding: 2px 5px;
+  border-radius: 15px;
+}
+
+.car__text {
+  margin-bottom: 81px;
 }

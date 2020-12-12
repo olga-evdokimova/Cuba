@@ -277,26 +277,91 @@ body {
 //=======car===========
 .car {
     &__inner {
-        position: relative;
     }
     &__title {
-        margin-bottom: 111px;
     }
     &__images {
+        margin: 111px 0 53px;
+        position: relative;
     }
     &__img {
         display: block;
         margin: 0 auto;
     }
-
-    &__shadow {
-        display: block;
-        min-height: 7px;
-        background-image: url("../image/content/shadow.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 53px;
+    &__dots {
+        width: 884px;
+        height: 381px;
+        position: absolute;
+        bottom: 28px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    &__dot {
+        width: 32px;
+        height: 32px;
+        background: #ecb74ca4;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        &:hover{
+           
+            &::after{
+                display: block;
+            }
+            .car__dot-text {
+                display: block;
+            }
+        }
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: #ffd600;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 11px;
+        }
+        &::after {
+            content: "";
+            display: none;
+            background-image: url("../image/content/car-line.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: initial;
+            width: 244px;
+            height: 158px;
+            margin-top: -170px;
+            margin-left: 22px;
+        }
+    }
+    &__dot-01 {
+        left: 0;
+        top: 190px;
+    }
+    &__dot-02 {
+        left: 347px;
+        top: 188px;
+    }
+    &__dot-03 {
+        left: 618px;
+        top: 147px;
+    }
+    &__dot-04 {
+        left: 691px;
+        top: 349px;
+    }
+    &__dot-text {
+       display: none;
+       font-size: 14px;
+       white-space: nowrap;
+       position: absolute;
+       top: -147px;
+       left: 145px;
+       background-color: rgba(255, 255, 255, 0.767);
+       padding:2px 5px;
+       border-radius: 15px;
     }
     &__text {
+        margin-bottom: 81px;
     }
 }
