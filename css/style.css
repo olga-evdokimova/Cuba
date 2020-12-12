@@ -209,10 +209,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Выбирает каждый четный(even) элемент
+   среди любой группы соседних элементов */
 }
 
 .about-card__row:nth-child(even) {
   background-position: left;
+}
+
+.about-card__row:nth-child(even) .about-card__row-inner {
+  margin-left: auto;
+}
+
+.about-card__row:nth-child(even) .about-card__row-inner::before {
+  content: "";
+  border: none;
+  border-top: 2px solid #ecb84c;
+  border-right: 2px solid #ecb84c;
+  left: auto;
+  right: 19px;
+}
+
+.about-card__row:nth-child(even) .about-card__row-inner::after {
+  content: "";
+  border-right: none;
+  border-left: 2px solid #ecb84c;
+  left: 19px;
 }
 
 .about-card__row-inner {
@@ -223,7 +245,7 @@ body {
   position: relative;
 }
 
-.about-card__row-01::before {
+.about-card__row-inner::before {
   content: "";
   width: 33px;
   height: 33px;
@@ -234,7 +256,7 @@ body {
   left: 19px;
 }
 
-.about-card__row-01::after {
+.about-card__row-inner::after {
   content: "";
   width: 33px;
   height: 33px;
@@ -243,32 +265,6 @@ body {
   position: absolute;
   bottom: 19px;
   right: 19px;
-}
-
-.about-card__row-02 {
-  margin-left: auto;
-}
-
-.about-card__row-02::before {
-  content: "";
-  width: 33px;
-  height: 33px;
-  border-top: 2px solid #ecb84c;
-  border-right: 2px solid #ecb84c;
-  position: absolute;
-  right: 19px;
-  top: 19px;
-}
-
-.about-card__row-02::after {
-  content: "";
-  width: 33px;
-  height: 33px;
-  border-bottom: 2px solid #ecb84c;
-  border-left: 2px solid #ecb84c;
-  position: absolute;
-  bottom: 19px;
-  left: 19px;
 }
 
 .about-card__title {

@@ -213,22 +213,35 @@ body {
         margin-bottom: 101px;
         display: flex;
         align-items: center;
+        /* Выбирает каждый четный(even) элемент
+   среди любой группы соседних элементов */
         &:nth-child(even) {
             background-position: left;
-           
         }
-        
+        &:nth-child(even) .about-card__row-inner {
+            margin-left: auto;
+            &::before {
+                content: "";
+                border: none;
+                border-top: 2px solid #ecb84c;
+                border-right: 2px solid #ecb84c;
+                left: auto;
+                right: 19px;
+            }
+            &::after {
+                content: "";
+                border-right: none;
+                border-left: 2px solid #ecb84c;
+                left: 19px;
+            }
+        }
     }
-    
     &__row-inner {
         width: 470px;
         height: 289px;
         padding: 19px;
         background-color: #fff;
         position: relative;
-       
-    }
-    &__row-01 {
         &::before {
             content: "";
             width: 33px;
@@ -248,29 +261,6 @@ body {
             position: absolute;
             bottom: 19px;
             right: 19px;
-        }
-    }
-    &__row-02 {
-        margin-left: auto;
-        &::before {
-            content: "";
-            width: 33px;
-            height: 33px;
-            border-top: 2px solid #ecb84c;
-            border-right: 2px solid #ecb84c;
-            position: absolute;
-            right: 19px;
-            top: 19px;
-        }
-        &::after {
-            content: "";
-            width: 33px;
-            height: 33px;
-            border-bottom: 2px solid #ecb84c;
-            border-left: 2px solid #ecb84c;
-            position: absolute;
-            bottom: 19px;
-            left: 19px;
         }
     }
     &__title {
@@ -280,18 +270,9 @@ body {
         color: #4e5665;
         padding: 14px 20px;
     }
-
     &__text {
         padding: 0 21px;
     }
-
-    // &__row-reverse {
-    //     min-height: 428px;
-    //     background-repeat: no-repeat;
-    //     background-position: left;
-    //     display: flex;
-    //     justify-content: flex-end;
-    // }
 }
 //=======car===========
 .car {
