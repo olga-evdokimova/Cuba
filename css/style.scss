@@ -304,7 +304,6 @@ body {
         position: absolute;
         cursor: pointer;
         &:hover{
-           
             &::after{
                 display: block;
             }
@@ -364,4 +363,47 @@ body {
     &__text {
         margin-bottom: 81px;
     }
+}
+//=======photo==========
+.photo {
+    &__title {
+        margin-bottom: 42px;
+    }
+    &__text {
+        padding-bottom: 48px;
+        border-bottom: 1px solid #D0D4D8;
+       opacity: 0.5;
+     
+    }
+}
+
+.slider {
+    max-width: 680px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 56px 0 81px;
+        filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
+    &__item {
+       padding: 0 20px; 
+       
+    }
+    &__img {
+        
+    }
+}
+
+//классы слайдера по умолчанию
+.slick-btn {
+    position: absolute; //reletive уже прописан слайдеру по умолчанию
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    background-color: transparent; //делает фон кнопки прозрачным( по умолчанию серый)
+}
+
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
 }

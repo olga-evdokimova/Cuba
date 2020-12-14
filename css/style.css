@@ -374,3 +374,43 @@ body {
 .car__text {
   margin-bottom: 81px;
 }
+
+.photo__title {
+  margin-bottom: 42px;
+}
+
+.photo__text {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #D0D4D8;
+  opacity: 0.5;
+}
+
+.slider {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 56px 0 81px;
+  -webkit-filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
+}
+
+.slider__item {
+  padding: 0 20px;
+}
+
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+  background-color: transparent;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
