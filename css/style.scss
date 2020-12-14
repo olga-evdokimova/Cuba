@@ -188,9 +188,9 @@ body {
         @media (max-width: 767px) {
             margin: 40px 0;
         }
-        @media (max-width: 480px){
+        @media (max-width: 480px) {
             margin-bottom: 0;
-        } 
+        }
     }
     &__title {
         margin-bottom: 22px;
@@ -234,7 +234,7 @@ body {
         color: #4e5665;
         padding-top: 32px;
         @media (max-width: 480px) {
-padding-top: 20px;
+            padding-top: 20px;
         }
     }
     &__stats-text {
@@ -270,14 +270,25 @@ padding-top: 20px;
 .about {
     &__inner {
         padding: 80px 0 121px;
+        @media (max-width: 767px) {
+            padding: 40px 0 50px;
+              
+          }
     }
     &__title {
         margin-bottom: 13px;
     }
     &__text {
         margin-bottom: 72px;
+        @media (max-width: 767px) {
+           margin-bottom: 30px;
+              
+          }
     }
     &__body {
+        @media (max-width: 767px) {
+           
+        }
     }
 }
 .about-card {
@@ -288,10 +299,19 @@ padding-top: 20px;
         margin-bottom: 101px;
         display: flex;
         align-items: center;
+        @media (max-width: 767px) {
+          height: 700px;
+           background-position: top;
+            margin-bottom: 0px;
+            
+        }
         /* Выбирает каждый четный(even) элемент
    среди любой группы соседних элементов */
         &:nth-child(even) {
             background-position: left;
+            @media (max-width: 767px) {
+                background-position: top;
+                  }
         }
         &:nth-child(even) .about-card__row-inner {
             margin-left: auto;
@@ -302,12 +322,18 @@ padding-top: 20px;
                 border-right: 2px solid #ecb84c;
                 left: auto;
                 right: 19px;
+                @media (max-width: 480px){
+                    right: 9px;
+                }
             }
             &::after {
                 content: "";
                 border-right: none;
                 border-left: 2px solid #ecb84c;
                 left: 19px;
+                @media (max-width: 480px){
+                    left: 9px;
+                }
             }
         }
     }
@@ -317,6 +343,18 @@ padding-top: 20px;
         padding: 19px;
         background-color: #fff;
         position: relative;
+        @media (max-width: 992px) {
+            width: 60%;
+          
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            bottom: -175px;
+        }
+        @media (max-width: 480px) {
+            height: auto;
+            padding: 9px;
+        }
         &::before {
             content: "";
             width: 33px;
@@ -326,6 +364,10 @@ padding-top: 20px;
             position: absolute;
             top: 19px;
             left: 19px;
+            @media (max-width: 480px){
+                top: 9px;
+                left: 9px;
+            }
         }
         &::after {
             content: "";
@@ -336,6 +378,10 @@ padding-top: 20px;
             position: absolute;
             bottom: 19px;
             right: 19px;
+            @media (max-width: 480px){
+                bottom: 9px;
+            right: 9px;
+            }
         }
     }
     &__title {
@@ -344,9 +390,15 @@ padding-top: 20px;
         line-height: 25px;
         color: #4e5665;
         padding: 14px 20px;
+        @media (max-width:480px) {
+          padding: 10px 20px;
+        }
     }
     &__text {
         padding: 0 21px;
+        @media (max-width: 480px){
+            padding-bottom: 10px;
+        }
     }
 }
 //=======car===========
