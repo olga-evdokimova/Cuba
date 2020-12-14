@@ -272,8 +272,10 @@ body {
         padding: 80px 0 121px;
         @media (max-width: 767px) {
             padding: 40px 0 50px;
-              
-          }
+        }
+        @media (max-width: 480px){
+            
+        }
     }
     &__title {
         margin-bottom: 13px;
@@ -281,13 +283,11 @@ body {
     &__text {
         margin-bottom: 72px;
         @media (max-width: 767px) {
-           margin-bottom: 30px;
-              
-          }
+            margin-bottom: 30px;
+        }
     }
     &__body {
         @media (max-width: 767px) {
-           
         }
     }
 }
@@ -300,10 +300,9 @@ body {
         display: flex;
         align-items: center;
         @media (max-width: 767px) {
-          height: 700px;
-           background-position: top;
+            height: 700px;
+            background-position: top;
             margin-bottom: 0px;
-            
         }
         /* Выбирает каждый четный(even) элемент
    среди любой группы соседних элементов */
@@ -311,7 +310,7 @@ body {
             background-position: left;
             @media (max-width: 767px) {
                 background-position: top;
-                  }
+            }
         }
         &:nth-child(even) .about-card__row-inner {
             margin-left: auto;
@@ -322,7 +321,7 @@ body {
                 border-right: 2px solid #ecb84c;
                 left: auto;
                 right: 19px;
-                @media (max-width: 480px){
+                @media (max-width: 480px) {
                     right: 9px;
                 }
             }
@@ -331,7 +330,7 @@ body {
                 border-right: none;
                 border-left: 2px solid #ecb84c;
                 left: 19px;
-                @media (max-width: 480px){
+                @media (max-width: 480px) {
                     left: 9px;
                 }
             }
@@ -345,7 +344,6 @@ body {
         position: relative;
         @media (max-width: 992px) {
             width: 60%;
-          
         }
         @media (max-width: 767px) {
             width: 100%;
@@ -364,7 +362,7 @@ body {
             position: absolute;
             top: 19px;
             left: 19px;
-            @media (max-width: 480px){
+            @media (max-width: 480px) {
                 top: 9px;
                 left: 9px;
             }
@@ -378,9 +376,9 @@ body {
             position: absolute;
             bottom: 19px;
             right: 19px;
-            @media (max-width: 480px){
+            @media (max-width: 480px) {
                 bottom: 9px;
-            right: 9px;
+                right: 9px;
             }
         }
     }
@@ -390,13 +388,13 @@ body {
         line-height: 25px;
         color: #4e5665;
         padding: 14px 20px;
-        @media (max-width:480px) {
-          padding: 10px 20px;
+        @media (max-width: 480px) {
+            padding: 10px 20px;
         }
     }
     &__text {
         padding: 0 21px;
-        @media (max-width: 480px){
+        @media (max-width: 480px) {
             padding-bottom: 10px;
         }
     }
@@ -410,6 +408,13 @@ body {
     &__images {
         margin: 111px 0 53px;
         position: relative;
+        @media (max-width: 1200px) {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        @media (max-width: 480px){
+         margin: 50px 10px 25px;
+        }
     }
     &__img {
         display: block;
@@ -422,6 +427,9 @@ body {
         bottom: 28px;
         left: 50%;
         transform: translate(-50%);
+        @media (max-width: 480px){
+            display: none;
+        }
     }
     &__dot {
         width: 32px;
@@ -430,12 +438,19 @@ body {
         border-radius: 50%;
         position: absolute;
         cursor: pointer;
+        @media (max-width: 480px){
+            display: none;
+        }
         &:hover {
             &::after {
                 display: block;
+                
             }
             .car__dot-text {
                 display: block;
+                @media (max-width: 480px){
+                    display: none;
+                }
             }
         }
         &::before {
@@ -458,23 +473,42 @@ body {
             height: 158px;
             margin-top: -170px;
             margin-left: 22px;
+            @media (max-width: 992px) {
+                background-image: none;
+            }
+            
         }
     }
     &__dot-01 {
         left: 0;
         top: 190px;
+        @media (max-width: 1200px) {
+            left: calc(146px + (0 - 146) * ((100vw - 767px) / (1200 - 767)));
+            top: calc(260px + (190 - 260) * ((100vw - 767px) / (1200 - 767)));
+        }
     }
     &__dot-02 {
         left: 347px;
         top: 188px;
+        @media (max-width: 1200px) {
+            top: calc(260px + (188 - 260) * ((100vw - 767px) / (1200 - 767)));
+        }
     }
     &__dot-03 {
         left: 618px;
         top: 147px;
+        @media (max-width: 1200px) {
+            top: calc(226px + (147 - 226) * ((100vw - 767px) / (1200 - 767)));
+            left: calc(546px + (618 - 546) * ((100vw - 767px) / (1200 - 767)));
+        }
     }
     &__dot-04 {
         left: 691px;
         top: 349px;
+        @media (max-width: 1200px) {
+            top: calc(370px + (349 - 370) * ((100vw - 767px) / (1200 - 767)));
+            left: calc(593px + (691 - 593) * ((100vw - 767px) / (1200 - 767)));
+        }
     }
     &__dot-text {
         display: none;
@@ -486,9 +520,17 @@ body {
         background-color: rgba(255, 255, 255, 0.767);
         padding: 2px 5px;
         border-radius: 15px;
+        @media (max-width: 992px) {
+            top: -41px;
+            left: 0px;
+        }
+        
     }
     &__text {
         margin-bottom: 81px;
+        @media (max-width: 480px){
+           margin-bottom: 52px;
+        }
     }
 }
 //=======photo==========

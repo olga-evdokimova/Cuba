@@ -527,6 +527,19 @@ body {
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  .car__images {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .car__images {
+    margin: 50px 10px 25px;
+  }
+}
+
 .car__img {
   display: block;
   margin: 0 auto;
@@ -542,6 +555,12 @@ body {
           transform: translate(-50%);
 }
 
+@media (max-width: 480px) {
+  .car__dots {
+    display: none;
+  }
+}
+
 .car__dot {
   width: 32px;
   height: 32px;
@@ -551,12 +570,24 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 480px) {
+  .car__dot {
+    display: none;
+  }
+}
+
 .car__dot:hover::after {
   display: block;
 }
 
 .car__dot:hover .car__dot-text {
   display: block;
+}
+
+@media (max-width: 480px) {
+  .car__dot:hover .car__dot-text {
+    display: none;
+  }
 }
 
 .car__dot::before {
@@ -582,9 +613,22 @@ body {
   margin-left: 22px;
 }
 
+@media (max-width: 992px) {
+  .car__dot::after {
+    background-image: none;
+  }
+}
+
 .car__dot-01 {
   left: 0;
   top: 190px;
+}
+
+@media (max-width: 1200px) {
+  .car__dot-01 {
+    left: calc(146px + (0 - 146) * ((100vw - 767px) / (1200 - 767)));
+    top: calc(260px + (190 - 260) * ((100vw - 767px) / (1200 - 767)));
+  }
 }
 
 .car__dot-02 {
@@ -592,14 +636,34 @@ body {
   top: 188px;
 }
 
+@media (max-width: 1200px) {
+  .car__dot-02 {
+    top: calc(260px + (188 - 260) * ((100vw - 767px) / (1200 - 767)));
+  }
+}
+
 .car__dot-03 {
   left: 618px;
   top: 147px;
 }
 
+@media (max-width: 1200px) {
+  .car__dot-03 {
+    top: calc(226px + (147 - 226) * ((100vw - 767px) / (1200 - 767)));
+    left: calc(546px + (618 - 546) * ((100vw - 767px) / (1200 - 767)));
+  }
+}
+
 .car__dot-04 {
   left: 691px;
   top: 349px;
+}
+
+@media (max-width: 1200px) {
+  .car__dot-04 {
+    top: calc(370px + (349 - 370) * ((100vw - 767px) / (1200 - 767)));
+    left: calc(593px + (691 - 593) * ((100vw - 767px) / (1200 - 767)));
+  }
 }
 
 .car__dot-text {
@@ -614,8 +678,21 @@ body {
   border-radius: 15px;
 }
 
+@media (max-width: 992px) {
+  .car__dot-text {
+    top: -41px;
+    left: 0px;
+  }
+}
+
 .car__text {
   margin-bottom: 81px;
+}
+
+@media (max-width: 480px) {
+  .car__text {
+    margin-bottom: 52px;
+  }
 }
 
 .photo__title {
