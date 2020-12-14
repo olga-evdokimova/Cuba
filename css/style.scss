@@ -51,17 +51,37 @@ body {
     max-width: 970px;
     padding: 0 10px;
     margin: 0 auto;
+    @media (max-width: 1280px) {
+        max-width: 970px;
+    }
+    @media (max-width: 992px) {
+        max-width: 750px;
+    }
+    @media (max-width: 767px) {
+        max-width: 467px;
+    }
+    @media (max-width: 480px) {
+        max-width: 400px;
+    }
+    @media (max-width: 400px) {
+        max-width: 340px;
+    }
+    @media (max-width: 350px) {
+        max-width: 300px;
+    }
 }
 //=====header=======
 .header {
     &__inner {
-        // width: 1440px;
         height: 100vh;
         background-image: url("../image/header/header-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         padding: 40px;
+        @media (max-width: 992px) {
+            padding: calc(16px + (40 - 16) * ((100vw - 320px) / (1200 - 320)));
+        }
     }
     &__content {
         border: 2px solid #ecb84c;
@@ -70,6 +90,9 @@ body {
         flex-direction: column;
         height: 100%;
         color: #ffffff;
+        @media (max-width: 400px){
+            border: 2px solid #ecb84c;
+        }
     }
     &__title {
         font-family: "Georgia-Bold";
@@ -77,6 +100,9 @@ body {
         line-height: 227px;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
         margin: auto;
+        @media (max-width: 992px) {
+            font-size: calc(84px + (200 - 84) * ((100vw - 320px) / (1200 - 320)));
+        }
     }
     &__slogan {
         font-family: "Georgia-Regular";
@@ -87,18 +113,31 @@ body {
         display: flex;
         white-space: nowrap;
         align-items: center;
-        margin-bottom: -12px;
+        margin-bottom: -13px;
+        @media (max-width: 767px) {
+            font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1200 - 320)));
+        }
+        @media (max-width: 400px) {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
         &::before {
             content: "";
             width: 100%;
             border-top: 2px solid #ecb84c;
             margin-right: 30px;
+            @media (max-width: 400px) {
+                display: none;
+            }
         }
         &::after {
             content: "";
             width: 100%;
             border-top: 2px solid #ecb84c;
             margin-left: 30px;
+            @media (max-width: 400px) {
+                display: none;
+            }
         }
     }
 }
@@ -502,7 +541,5 @@ body {
     &__copyright {
         text-align: center;
         padding-bottom: 32px;
-        
     }
 }
-
