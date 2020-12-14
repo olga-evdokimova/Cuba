@@ -381,7 +381,7 @@ body {
 
 .photo__text {
   padding-bottom: 48px;
-  border-bottom: 1px solid #D0D4D8;
+  border-bottom: 1px solid #d0d4d8;
   opacity: 0.5;
 }
 
@@ -413,4 +413,110 @@ body {
 
 .slick-next {
   right: 0;
+}
+
+.footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer__menu {
+  margin: 56px 0 40px;
+}
+
+.footer__menu:first-child {
+  margin-left: 104px;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu-title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #4e5665;
+  margin-bottom: 20px;
+}
+
+.footer__menu-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer__list-item {
+  margin-bottom: 8px;
+}
+
+.footer__list-message::before {
+  content: "";
+  margin-right: 12px;
+  vertical-align: -4px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../image/footer/sms.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.footer__list-facebook::before {
+  content: "";
+  margin-right: 12px;
+  vertical-align: -4px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../image/footer/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.footer__list-instagram::before {
+  content: "";
+  margin-right: 12px;
+  vertical-align: -4px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../image/footer/instagram.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.footer__list-youtube::before {
+  content: "";
+  margin-right: 12px;
+  vertical-align: -4px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../image/footer/youtube.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.footer__list-email::before {
+  content: "";
+  margin-right: 12px;
+  vertical-align: -4px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../image/footer/email.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-bottom: 32px;
 }
