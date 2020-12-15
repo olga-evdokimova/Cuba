@@ -825,12 +825,27 @@ body {
   .footer__menu-title {
     margin-bottom: 10px;
   }
+  .footer__menu-title::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url("../image/footer/footer-up.svg");
+    margin-left: auto;
+    margin-top: -23px;
+  }
 }
 
 .footer__menu-list {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+}
+
+@media (max-width: 767px) {
+  .footer__menu-list {
+    display: none;
+  }
 }
 
 .footer__list-item {
@@ -900,4 +915,14 @@ body {
 .footer__copyright {
   text-align: center;
   padding-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+  .widget__title--active::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .widget__body--hidden {
+    display: block;
+  }
 }
