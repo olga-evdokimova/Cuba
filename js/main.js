@@ -5,7 +5,7 @@ $('.slider').slick({
     fade: true,// эффект возникновения слайда вместо перелистывания
   
 });
-//=======показать\скрыть контент ввнутри виджетов==========================
+//=======выпадающие списки в футере==========================
 const widgets = document.querySelectorAll('.widget');
 
 //находим все виджеты на странице
@@ -21,5 +21,3 @@ widgets.forEach(function (widget) {
         }
     });
 });
-// widget__body--hidden
-// widget__title--active
