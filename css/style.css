@@ -726,6 +726,12 @@ body {
           filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
 }
 
+@media (max-width: 767px) {
+  .slider {
+    padding: 40px 0 40px;
+  }
+}
+
 @media (max-width: 480px) {
   .slider {
     padding: 36px 0;
@@ -824,6 +830,7 @@ body {
 @media (max-width: 767px) {
   .footer__menu-title {
     margin-bottom: 10px;
+    margin-left: 20px;
   }
   .footer__menu-title::after {
     content: "";
@@ -833,6 +840,7 @@ body {
     background-image: url("../image/footer/footer-up.svg");
     margin-left: auto;
     margin-top: -23px;
+    margin-right: 20px;
   }
 }
 
@@ -850,6 +858,12 @@ body {
 
 .footer__list-item {
   margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .footer__list-item {
+    margin-left: 20px;
+  }
 }
 
 .footer__list-message::before {

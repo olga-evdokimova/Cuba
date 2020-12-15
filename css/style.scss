@@ -553,6 +553,10 @@ body {
     margin: 0 auto;
     padding: 56px 0 81px;
     filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
+    @media (max-width: 767px){
+        padding: 40px 0 40px;
+
+    }
     @media (max-width: 480px) {
         padding: 36px 0;
     }
@@ -595,6 +599,9 @@ body {
         @media (max-width: 992px) {
             margin: 20px 0;
         }
+        @media (max-width: 767px){
+           
+        }
         &:first-child {
             margin-left: 104px;
             @media (max-width: 992px) {
@@ -620,6 +627,7 @@ body {
         margin-bottom: 20px;
         @media (max-width: 767px) {
             margin-bottom: 10px;
+            margin-left: 20px;
             &::after {
                 content: "";
                 width: 24px;
@@ -628,6 +636,7 @@ body {
                 background-image: url("../image/footer/footer-up.svg");
                 margin-left: auto;
                 margin-top: -23px;
+                margin-right: 20px;
             }
             
         }
@@ -639,10 +648,14 @@ body {
         line-height: 19px;
         @media (max-width: 767px){
             display: none;
+            
         }
     }
     &__list-item {
         margin-bottom: 8px;
+        @media (max-width: 767px){
+            margin-left: 20px;
+        }
     }
     &__list-link {
     }
@@ -716,6 +729,7 @@ body {
         padding-bottom: 32px;
     }
 }
+//классы для выпадающего списка
 @media (max-width: 767px){
     .widget__title--active::after{
         //поворачивает стрелочку при клике
